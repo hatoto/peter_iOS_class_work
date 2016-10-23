@@ -13,21 +13,14 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var cost: UITextField!
     
-    
     @IBOutlet weak var tipRate: UITextField!
-    
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    
     @IBAction func doCal(_ sender: UIButton) {
-        
-        print("cost is blank: \(cost.text!.isEmpty)")
-        print("tip rate is blank \(tipRate.text!.isEmpty)")
         
         resultLabel.textColor = UIColor.red
 
-        
         if( cost.text!.isEmpty && tipRate.text!.isEmpty ){
             resultLabel.text = "要輸入計算條件！！"
         }else if( cost.text!.isEmpty  ){
@@ -39,31 +32,26 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             let theRate = Double(tipRate.text!)! / 100
             
             resultLabel.textColor = UIColor.blue
-            
             resultLabel.text = "小費：" + String(theCost! * theRate)
-            
         }
-        
         
     }
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
         textField.resignFirstResponder()
-        return false
+        return true
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        cost.delegate = self
+        tipRate.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
     }
 
 
