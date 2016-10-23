@@ -12,42 +12,30 @@ class SecondViewController: UIViewController {
 
     
     @IBOutlet weak var questionLabel: UILabel!
-    
     @IBOutlet weak var answerLabel: UILabel!
-    
     
     @IBAction func doShowAns(_ sender: AnyObject) {
         answerLabel.text = quizArray[quizNumber].ans
     }
     
-    
     @IBAction func nextQ(_ sender: AnyObject) {
-    
         if quizNumber < 9 {
              quizNumber = quizNumber + 1
         }else{
             quizNumber = 0
         }
         displayQuiz()
-        
     }
     
     
     var quizArray :[(quiz: String, ans: String)] = []
-    
     var quizNumber : Int = 0
-    
- 
-    
-    
     
     func displayQuiz(){
        questionLabel.text = quizArray[quizNumber].quiz
        answerLabel.text = ""
     }
-    
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +55,6 @@ class SecondViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

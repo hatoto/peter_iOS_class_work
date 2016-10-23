@@ -14,18 +14,12 @@ class FirstViewController: UIViewController {
     var theCount : Int = 0
     
     @IBOutlet weak var numberGuess: UITextField!
-    
-    
     @IBOutlet weak var guessCount: UILabel!
-    
-    
     @IBOutlet weak var resultLabel: UILabel!
-    
-    
     
     @IBAction func doGuess(_ sender: AnyObject) {
         
-        if !guessCount.text!.isEmpty {
+        if !numberGuess.text!.isEmpty {
             theCount = theCount + 1
             guessCount.text = String(theCount)
             
@@ -44,19 +38,14 @@ class FirstViewController: UIViewController {
                     resultLabel.text = "恭喜，答對了！"
                 }
                 
-                
             }else{
                 resultLabel.textColor = UIColor.orange
                 resultLabel.text = "不能再猜了"
             }
-        
         }else{
             resultLabel.textColor = UIColor.orange
             resultLabel.text = "要輸入數字喔！"
         }
-        
-        
-        
         
     }
     
@@ -83,13 +72,23 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         creatAnswer()
         
+        // 增加一個觸控事件
+        let tap = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.hideKeyboard(_:)))
+        tap.cancelsTouchesInView = false
+        
+        // 加在最基底的 self.view 上
+        self.view.addGestureRecognizer(tap)
+        
+    }
+
+
+    // 按空白處會隱藏編輯狀態
+    func hideKeyboard(_ tapG:UITapGestureRecognizer){
+        self.view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
