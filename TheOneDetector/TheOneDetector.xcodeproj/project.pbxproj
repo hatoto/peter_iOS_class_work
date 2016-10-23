@@ -300,6 +300,7 @@
 				619A4FBF1DB9458F00E1CF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

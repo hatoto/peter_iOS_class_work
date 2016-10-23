@@ -1,7 +1,5 @@
 //
-//  InfoViewController.swift
-//  Demo
-//
+//  ViewController.swift
 //  Created by hatoto on 2016/10/20.
 //  Copyright © 2016年 hatotoINC. All rights reserved.
 //
@@ -10,26 +8,20 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     
-    
-    let horoscopeDict = ["牡羊座":"Aries","金牛座":"Taurus","雙子座":"Gemini","巨蟹座":"Cancer",	"獅子座":"Leo","處女座":"Virgo","天秤座":"Libra","天蠍座":"Scorpio","射手座":"Sagittarius",
+    // 星座Dictionary Array
+    let horoscopeDict = ["牡羊座":"Aries","金牛座":"Taurus","雙子座":"Gemini","巨蟹座":"Cancer","獅子座":"Leo","處女座":"Virgo","天秤座":"Libra","天蠍座":"Scorpio","射手座":"Sagittarius",
         "魔羯座":"Capricorn","水瓶座":"Aquarius","雙魚座":"Pisces"]
-    
-    
     
     
     var horoscopeTZArr: [String] = []
     
     // 建立 UIPickerView
-    let myPickerView : UIPickerView = UIPickerView()
+    let thePickerView : UIPickerView = UIPickerView()
     
     @IBOutlet weak var ageLabel: UILabel!
-    
     @IBOutlet weak var horoscope: UITextField!
-    
     @IBOutlet weak var sex: UISegmentedControl!
-    
     @IBOutlet weak var trueHeart: UISwitch!
-    
     @IBAction func ageSlide(_ sender: UISlider) {
         ageLabel.text = String(Int(sender.value))
     }
@@ -51,7 +43,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let isRightScopt = fineHoroscopes.contains(selectedHoroInEng)
         
         print("horoscope in eng: \(selectedHoroInEng)")
-        print("horoscope.text: \(horoscope.text!)")
         print("sex: \(sexStr)")
         print("trueHeart: \(trueHeart.isOn)")
         print("age: \(ageLabel.text)")
@@ -62,8 +53,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }else{
             youOrNot.selectedSegmentIndex = 1
         }
-        
-        
     }
     
     
@@ -72,18 +61,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //星座中文Array
         horoscopeTZArr = [String](horoscopeDict.keys)
-        inti()
+        initial()
     }
     
     
-    func inti(){
+    func initial(){
         // 設定 UIPickerView 的 delegate 及 dataSource
-        myPickerView.delegate = self
-        myPickerView.dataSource = self
+        thePickerView.delegate = self
+        thePickerView.dataSource = self
         
         // 將 UITextField 原先鍵盤的視圖更換成 UIPickerView
-        horoscope.inputView = myPickerView
+        horoscope.inputView = thePickerView
         
         // 設置 UITextField 預設的內容
         horoscope.text = horoscopeTZArr[0]
