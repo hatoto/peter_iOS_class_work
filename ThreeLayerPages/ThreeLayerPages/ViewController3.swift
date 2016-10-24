@@ -24,8 +24,18 @@ class ViewController3: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        print("\(#file)\(#function)")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        print("\(#file)\(#function)")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("\(#file)\(#function)")
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print("\(#file)\(#function)")
         appDelegate.view3Count += 1
         
         viewShowCountLabel3.text = String(appDelegate.view3Count)
