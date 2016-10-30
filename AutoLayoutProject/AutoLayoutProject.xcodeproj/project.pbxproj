@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		617B196A1DC22906001519F9 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617B19691DC22906001519F9 /* Main2.storyboard */; };
 		617B196E1DC234AD001519F9 /* Main3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617B196D1DC234AD001519F9 /* Main3.storyboard */; };
+		61AD13B91DC646AC00A4A509 /* Main4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AD13B81DC646AC00A4A509 /* Main4.storyboard */; };
 		61AE0D131DC21E58008CB60A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AE0D121DC21E58008CB60A /* AppDelegate.swift */; };
 		61AE0D151DC21E58008CB60A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AE0D141DC21E58008CB60A /* ViewController.swift */; };
 		61AE0D181DC21E58008CB60A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AE0D161DC21E58008CB60A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		617B19691DC22906001519F9 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		617B196D1DC234AD001519F9 /* Main3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main3.storyboard; sourceTree = "<group>"; };
+		61AD13B81DC646AC00A4A509 /* Main4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main4.storyboard; sourceTree = "<group>"; };
 		61AE0D0F1DC21E58008CB60A /* AutoLayoutProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AE0D121DC21E58008CB60A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61AE0D141DC21E58008CB60A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				617B19691DC22906001519F9 /* Main2.storyboard */,
 				61AE0D191DC21E58008CB60A /* Assets.xcassets */,
 				617B196D1DC234AD001519F9 /* Main3.storyboard */,
+				61AD13B81DC646AC00A4A509 /* Main4.storyboard */,
 				61AE0D1B1DC21E58008CB60A /* LaunchScreen.storyboard */,
 				61AE0D1E1DC21E58008CB60A /* Info.plist */,
 			);
@@ -132,6 +135,7 @@
 			files = (
 				61AE0D1D1DC21E58008CB60A /* LaunchScreen.storyboard in Resources */,
 				617B196A1DC22906001519F9 /* Main2.storyboard in Resources */,
+				61AD13B91DC646AC00A4A509 /* Main4.storyboard in Resources */,
 				61AE0D1A1DC21E58008CB60A /* Assets.xcassets in Resources */,
 				617B196E1DC234AD001519F9 /* Main3.storyboard in Resources */,
 				61AE0D181DC21E58008CB60A /* Main.storyboard in Resources */,

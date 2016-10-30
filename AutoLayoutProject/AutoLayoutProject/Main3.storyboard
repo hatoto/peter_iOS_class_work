@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iTY-KB-0xh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gya-rb-VxA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img0001_1" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-VP-Gh3" userLabel="a">
@@ -40,7 +40,7 @@
                             <constraint firstItem="bhO-k6-nJK" firstAttribute="width" secondItem="xCG-VP-Gh3" secondAttribute="width" id="5dz-8f-FOl"/>
                             <constraint firstItem="xCG-VP-Gh3" firstAttribute="leading" secondItem="gya-rb-VxA" secondAttribute="leading" constant="20" id="O0n-FA-94V"/>
                             <constraint firstAttribute="trailing" secondItem="bhO-k6-nJK" secondAttribute="trailing" constant="20" id="VQm-Vm-gAb"/>
-                            <constraint firstItem="deL-ID-qhy" firstAttribute="width" secondItem="xCG-VP-Gh3" secondAttribute="width" constant="-1" id="iFf-2h-9BN"/>
+                            <constraint firstItem="deL-ID-qhy" firstAttribute="width" secondItem="xCG-VP-Gh3" secondAttribute="width" id="iFf-2h-9BN"/>
                             <constraint firstItem="xCG-VP-Gh3" firstAttribute="centerY" secondItem="gya-rb-VxA" secondAttribute="centerY" id="iIf-87-THw"/>
                             <constraint firstItem="bhO-k6-nJK" firstAttribute="leading" secondItem="deL-ID-qhy" secondAttribute="trailing" constant="10" id="lqC-Ns-RWh"/>
                             <constraint firstItem="bhO-k6-nJK" firstAttribute="centerY" secondItem="gya-rb-VxA" secondAttribute="centerY" id="oLF-yp-enX"/>
