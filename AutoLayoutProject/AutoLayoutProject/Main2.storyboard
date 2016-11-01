@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9xW-ya-vr8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7u0-vN-3mr">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp5-Ti-uds">
@@ -63,7 +63,7 @@
                             <constraint firstItem="Mei-N6-QMz" firstAttribute="centerY" secondItem="7u0-vN-3mr" secondAttribute="centerY" id="uYw-0K-4c0"/>
                             <constraint firstItem="5Py-39-aoC" firstAttribute="centerY" secondItem="7u0-vN-3mr" secondAttribute="centerY" id="wmH-jO-bqA"/>
                             <constraint firstItem="jWX-jz-sNT" firstAttribute="top" secondItem="Mei-N6-QMz" secondAttribute="top" id="yIL-kq-c4g"/>
-                            <constraint firstItem="VfT-ea-Wf6" firstAttribute="leading" secondItem="5Py-39-aoC" secondAttribute="trailing" constant="2" id="yyp-Gu-kDS"/>
+                            <constraint firstItem="VfT-ea-Wf6" firstAttribute="leading" secondItem="5Py-39-aoC" secondAttribute="trailing" id="yyp-Gu-kDS"/>
                         </constraints>
                     </view>
                 </viewController>
